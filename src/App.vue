@@ -9,6 +9,7 @@
       <el-button type="info" :icon="Message" circle />
       <el-button type="warning" :icon="Star" circle />
       <el-button type="danger" :icon="Delete" circle />
+      <h1>123</h1>
     </div>
     <!-- <el-icon size="20" color="#666">
       <Edit />
