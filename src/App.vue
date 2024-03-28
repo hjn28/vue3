@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <h1>关于利姆鲁</h1>
-    <el-button type="primary" size="default">红丸</el-button>
+    <!-- <el-button type="primary" size="default">红丸</el-button>
     <div>
       <el-button :icon="Search" circle />
       <el-button type="primary" :icon="Edit" circle />
@@ -10,17 +10,19 @@
       <el-button type="warning" :icon="Star" circle />
       <el-button type="danger" :icon="Delete" circle />
       <h1>123</h1>
-    </div>
+    </div> -->
     <!-- <el-icon size="20" color="#666">
       <Edit />
     </el-icon> -->
-    <el-pagination
+    <!-- <el-pagination
       :page-sizes="[100, 200, 300, 400]"
       :disabled="disabled"
       layout="total, sizes, prev, pager, next, jumper"
       :total="400"
-    />
-    <Test></Test>
+    /> -->
+    <!-- <Test></Test> -->
+    <!-- <SvgIcon name="shop"></SvgIcon> -->
+    <svg-icon name="shop"></svg-icon>
   </div>
 </template>
 
@@ -34,9 +36,10 @@ import {
   Star,
 } from '@element-plus/icons-vue'
 import { ref } from 'vue'
-import Test from '@/components/Test.vue'
+// import Test from '@/components/Test.vue'
+import SvgIcon from '@/components/Svg.vue'
 
-const disabled = ref(false)
+// const disabled = ref(false)
 </script>
 
 <style scoped lang="scss">
