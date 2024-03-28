@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 // defineProps({
 //   prefix: {
 //     type: String,
@@ -22,6 +22,4 @@
 // })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
