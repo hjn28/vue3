@@ -34,7 +34,7 @@ import {
   Star,
 } from '@element-plus/icons-vue'
 import { ref } from 'vue'
-import Test from '@/components/test.vue'
+import Test from '@/components/Test.vue'
 
 const disabled = ref(false)
 </script>
