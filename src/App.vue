@@ -22,11 +22,15 @@
     /> -->
     <!-- <Test></Test> -->
     <!-- <SvgIcon name="shop"></SvgIcon> -->
-    <svg-icon name="shop"></svg-icon>
+    <!-- <svg-icon name="shop"></svg-icon> -->
+    <!-- <svg-icon></svg-icon> -->
+    <h3>测试axios二次封装</h3>
   </div>
 </template>
 
 <script setup lang="ts">
+import request from '@/utils/request.ts';
+import { onMounted } from 'vue';
 import {
   Check,
   Delete,
@@ -35,11 +39,24 @@ import {
   Search,
   Star,
 } from '@element-plus/icons-vue'
-import { ref } from 'vue'
 // import Test from '@/components/Test.vue'
-import SvgIcon from '@/components/Svg.vue'
+// import SvgIcon from '@/components/Svg.vue'
+
+// 年月日 yyyy-mm-dd
+var regex = /^[0-9]{4}-(0[1-9]|1[1-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/
+console.log(regex.test('2002-11-31'));
 
 // const disabled = ref(false)
+// 当组件挂载完毕之后发送一个请求
+onMounted(()=>{
+  request({
+    url:'',
+    method:'post',
+    data:{}
+  }).then( (res: any) => {
+    console.log(res)
+  })
+})
 </script>
 
 <style scoped lang="scss">
