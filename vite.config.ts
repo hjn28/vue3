@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-import {viteMockServe} from 'vite-plugin-mock'
+import { viteMockServe } from 'vite-plugin-mock'
 // https://vitejs.dev/config/
 export default defineConfig((command) => {
   return {
@@ -13,8 +13,8 @@ export default defineConfig((command) => {
         symbolId: 'icon-[dir]-[name]',
       }),
       viteMockServe({
-        localEnabled: command === 'serve',
-      })
+        // localEnabled: command === 'serve',
+      }),
     ],
     resolve: {
       alias: {

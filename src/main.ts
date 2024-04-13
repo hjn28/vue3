@@ -8,14 +8,14 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import axios from 'axios'
 
 // 接口测试
-axios({
-  url:'/api/user/login',
-  method:'post',
-  data:{
-    username:'admian',
-    password:'111111'
-  }
-})
+// axios({
+//   url: '/api/user/login',
+//   method: 'post',
+//   data: {
+//     username: 'admin',
+//     password: '111111',
+//   },
+// })
 
 // 获取应用实例对象
 const app = createApp(App)
